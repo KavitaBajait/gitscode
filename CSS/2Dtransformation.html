@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D transform</title>
+    <style>
+        div{
+            position: relative;
+            top: 200px;
+            left: 100px;
+            background-color: red;
+            border: 3px solid blue;
+            height: 100px;
+            width: 200px;
+            color: aliceblue;
+            /* transform: translate(150px, 200px); */
+            /* transform: translatey(200px); */
+            /* transform: rotate(45deg); */
+        }
+        .demo{
+            /* transform: rotate(60deg); */
+            /* transform: scale(2,3); */
+            /* transform: skewX(30deg); */
+            /* transform: skew(20deg,30deg); */
+            transform: matrix(1, 0.2, 0, 1,50, 60);
+        }
+    </style>
+</head>
+<body>
+    <!-- 2 types of transformationm: 2d & 3d (move, rotate, scale, skew)
+    transform: translate(x,y) rotate(deg) scale(w,h) skew(),skewX matrix(scaleX, skewY,skewX, scaleY,translateX,translateY)-->
+    <div class="original">original</div>
+    <br><br><br><br>
+    <div class="demo">demo</div>
+</body>
+</html>

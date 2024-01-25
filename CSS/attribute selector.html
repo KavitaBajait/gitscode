@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- element[attribute]{
+        property:value;
+    } -->
+    <title>Attribute selectors</title>
+    <style>
+        a[target]{
+            color: red;
+        }
+        a[target='_blank']{
+            color: blue;
+        }
+        p[class]{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- It applies styling on the basis attribute and the value of attribute of the elements 
+    1. [attribute]-->
+    <a href="">sample1</a>
+    <a href="" target="_self">sample2</a>
+    <a href="" target="_parent">sample3</a>
+    <a href="" target="_blank">sample4</a>
+
+
+    
+    <p class="check">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus facilis ea aperiam recusandae quaerat,
+        sequi molestias in rem minima. Architecto consequuntur aliquid nobis fugiat reiciendis.
+        Doloribus, repudiandae laborum fugit accusantium cupiditate magnam quasi quos mollitia nemo quae ad quis enim?</p>
+</body>
+</html>

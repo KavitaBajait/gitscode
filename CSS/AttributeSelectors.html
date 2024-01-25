@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title> Attribute selectors</title>
+    <style>
+        a[target]{
+            color: red;
+        }
+        a[target='_blank']{
+            color: blueviolet;
+        }
+        p[class~='sample']{
+            border: 2px solid greenyellow;
+        }
+        p[class|='lorem']{
+            border:5px solid blue;
+        }
+        p[class='check']{
+            color: darkmagenta;
+        }
+        p[title^='panda']{
+            background-color: deeppink;
+        }
+        p[title$='teddy']{
+            background-color: yellow;
+        }
+        p[title$='teddy']{
+            text-decoration:line-through;
+        }
+        p[title*=' ted']{
+            text-decoration:wavy;
+            font-size: 40px;
+        }
+       /*p[class]{
+            color: blue;
+        }*/
+        
+    </style>
+</head>
+<body>
+    <!-- It applies on styling on basis attributes and the value of attribute of html element
+    1.[attribute] 2.[attribute='value'](exact value) 3.[attribute~='value'] should contain this value 
+    4.[attribute|='value'] exact match or value followed by the hyphen (-)
+    5.[attribute^='value'] the value should start with given value 6.[attribute$='value'] should end the value by specified value
+    7.[attribute*='value'] specified value should part of value of attribute-->
+
+    <a href="">sample 1</a>
+    <a href="" target="_self">sample 2</a>
+    <a href="" target="_parent">sample 3</a>
+    <a href="" target="_blank">sample 4</a>
+
+
+    <p class="check sample">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Porro voluptatem molestias eum iusto corporis ipsa iure nostrum inventore accusamus esse.
+       </p>
+
+    <p class="check">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Porro voluptatem molestias eum iusto corporis ipsa iure nostrum inventore accusamus esse.
+       </p>
+
+    <p class="lorem-sample">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Porro voluptatem molestias eum iusto corporis ipsa iure nostrum inventore accusamus esse.
+       </p>
+    <p class="lorem" title="panda">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Porro voluptatem molestias eum iusto corporis ipsa iure nostrum inventore accusamus esse.
+       </p>
+    <p class="lorem" title="teddy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Porro voluptatem molestias eum iusto corporis ipsa iure nostrum inventore accusamus esse.
+       </p>
+    <p class="lorem" title="cute teddy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Porro voluptatem molestias eum iusto corporis ipsa iure nostrum inventore accusamus esse.
+       </p>
+
+    </body>
+</html>
+
+
+

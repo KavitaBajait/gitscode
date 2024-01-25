@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Document</title>
+    <style>
+         .div1{
+            background-color: blueviolet;
+            height: 100px;
+            width: 200px;
+            border: 3px solid red;
+            top: 10px;
+            left: 100px;
+            position: relative;
+        }
+         .fixedexample{
+            background-color: rgb(43, 226, 113);
+            height: 100px;
+            width: 200px;
+            border: 3px solid rgb(255, 0, 162);
+            bottom: 0;
+            right: 0;
+            position: fixed;
+        }
+        .absoluteexample{
+            background-color:aquamarine;
+            height: 300px;
+            width: 300px;
+            border: 3px solid coral;
+            top: 50px;
+            position: relative;
+        }
+        .innerDIVorabsolute{
+            background-color:brown;
+            height: 100px;
+            width: 100px;
+            border: 3px solid darkgoldenrod;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- position: static (by default), relative(relative to original position), fixed(relative to viewport),
+         absolute(set position according to ancestor(parent)), sticky 
+    top right left bottom-->
+    <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea dolor laborum voluptate fuga tempora repellendus 
+        quaerat pariatur perferendis ipsam quia ex dicta veniam nam totam ipsum eos vel consequuntur, voluptatem est 
+        sit culpa! Adipisci nihil nesciunt rem possimus molestiae illum, laudantium suscipit. Praesentium, eligendi 
+        doloribus repellendus ducimus error blanditiis illo! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Quod, soluta blanditiis? Corporis officia corrupti voluptate quibusdam esse cumque ipsam porro illum, nostrum
+          culpa exercitationem accusamus a quaerat nesciunt, quos minus.</p> -->
+    <div class="div1">this is div</div>
+    <div class="fixedexample">this is div for fixed position</div>
+    <br><br><br><br>
+    <div class="absoluteexample">
+        <div class="innerDIVorabsolute"></div>
+    </div>
+
+</body>
+</html>

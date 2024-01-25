@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-grid2 demo</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:  auto auto auto auto;
+            grid-template-rows: auto auto;
+            /* height: 500px; */
+            /* justify-content: space-evenly; */
+            /* start, center, end, space-around, space-between, space-equaly */
+            /* column-gap: 10px; */
+            /* row-gap: 10px; */
+            /* align-content: center; */
+            /* start, center, end, space-around, space-between, space-equaly */
+            gap: 10px;
+            background-color: yellow;
+            padding: 10px;
+        }
+        #clrblck{
+            color: black;
+            font-size: 20px;
+        }
+        .grid-item{
+            background-color: blueviolet;
+            border: 3px solid red;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .one{
+            background-color: pink;
+            /* grid-column-start: 1; */
+            /* grid-column-end: 5; */
+            grid-column: 1/5;
+        }
+        .two{
+            background-color: chartreuse;
+            /* grid-row-start: 2; */
+            /* grid-row-end: 4; */
+            grid-row: 2/4;
+        }
+        .five{
+            background-color: chartreuse;
+            /* grid-row-start: 2; */
+            /* grid-row-end: 4; */
+            grid-row: 2/4;
+            /* grid-column-start: 4; */
+            /* grid-column-end: 5; */
+            grid-column: 4/5;
+        }
+        .eight{
+            background-color: darkgreen;
+            /* grid-column: 1/5; */
+            grid-column: 1/ span 4;
+        }
+        .three{
+            /* grid-row: 2/4; */
+            grid-row: 2/ span 2;
+        }
+        .seven{
+            grid-column: 2/ span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="clrblck" class="grid-item one"> <header>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, provident?</header></div> 
+        <div id="clrblck" class="grid-item two">2</div>
+        <div id="clrblck" class="grid-item three">3</div>
+        <div class="grid-item">4</div>
+        <div id="clrblck" class="grid-item five">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item seven">7</div>
+        <div id="clrblck" class="grid-item eight">8</div>
+    </div>
+    
+</body>
+</html>

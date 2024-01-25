@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        .container{
+            position: relative;
+        }
+        .one{
+            position: relative;
+            z-index: 1;
+            border: 3px solid red;
+            background-color: blueviolet;
+            height: 100px;
+            margin: 30px;
+        }
+        .two{
+            position: absolute;
+            z-index: 3;
+            background-color: brown;
+            height: 60px;
+            width: 50%;
+            left: 50px;
+            top: 50px;
+        }
+        .three{
+            position: absolute;
+            z-index: 2;
+            background-color: aquamarine;
+            width: 70%;
+            left: 270px;
+            top: 15px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three">three</div>
+    </div>
+</body>
+</html>

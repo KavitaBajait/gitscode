@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <!-- selector::pseudo-elements{
+              property:value;
+       } -->
+       <title>Pseudo-element</title>
+       <style>
+              p::first-line{
+                     color: crimson;
+              }
+              p::first-letter{
+                     font: size 30px;
+                     color: blue;
+              }
+              #para2::before{
+                     content: %%%%;
+              }
+             #para2::after{
+              content: ***;
+             }
+             li.aa::marker{
+              color: chartreuse;
+              font-size: 30px;
+             }
+             p::selection{
+              background-color: rgb(30, 210, 78);
+              color: deeppink;
+             }
+       </style>
+</head>
+<body>
+       <!-- applies styling on the specific part of the elements 
+       1. first line-->
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Qui totam placeat nam natus minus magni, molestiae quo eum beatae cumque ipsum maxime ex,
+       maiores similique quod vitae modi harum odit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Nobis architecto praesentium tenetur, soluta et libero veritatis amet neque modi similique quis nesciunt facere quo magnam facilis,
+       ex impedit officia sit.
+    </p>
+    <p id="para2">this is paragraph</p>
+    <ol>
+       <li class="aa">one</li>
+       <li>two</li>
+       <li>three</li>
+    </ol>
+    <ul>
+       <li>one</li>
+       <li>two</li>
+       <li>three</li>
+    </ul>
+
+</body>
+</html>

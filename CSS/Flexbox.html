@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+       /* flexbox- flex-direction(column, row(default) column reverse, row reverse), 
+           
+       flex-wrap(wrap, nowrap(default), wrap-reverse), 
+            
+       flex-flow(shorthand for direction & flex-wrap), 
+            
+       justify-content(align flex items horizontally--center, flex start, flex end, space-between, space evenly),
+            
+       align-items(align flex items vertically---center, flex start, flex end, stretch(default), baseline), 
+            
+       align-content(to align flex line--center, flex start, flex end, space-around, space-between, space-evenly, stretch) */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+       /* properties for flex items
+       order(default-0), flex-grow(default-0), flex-shrink(default-1), flex-basis, 
+       flex(flex-grow, flex-shrink, flex basis), align-self(center, baseline, flex-start, flex-end) */
+
+       .container{
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            /* flex-flow: row wrap; */
+            /* justify-content: center; */
+            align-items: stretch;
+            /* align-content: space-around; */
+            background-color: blueviolet;
+            height: 300px;
+        }
+        .container> div{
+            background-color: aqua;
+            font-size: 30px;
+            margin: 10px;
+            padding: 20px;
+            /* width: 100px; */
+        }
+        .one{
+            /* order: 4; */
+            /* flex-grow: 1; */
+        }
+        .two{
+            /* order: 3; */
+            /* flex-grow: 3; */
+            /* flex-basis: 400px; */
+            flex: 0 0 400px;
+        }
+        .three{
+            /* order: 2; */
+            /* flex-grow: 4; */
+            /* flex-shrink: 2; */
+        }
+        .four{
+            /* order: 1; */
+            /* flex-grow: 2; */
+            flex-basis: 100px;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div style="font-size: 20px;">1</div>
+        <div style="font-size: 30px;">2</div>
+        <div style="font-size: 40px;">3</div> -->
+        <div class="one" style="">1</div>
+        <div class="two" style="">2</div>
+        <div class="three" style="">3</div>
+        <div class="four" style="">4</div>
+        <div class="five" style="">5</div>
+        <div class="six" style="">6</div>
+        <div class="seven" style="">7</div>
+
+        <!-- <div>4</div>
+        <div>4</div>
+        <div>4</div> <div>4</div><div>4</div><div>4</div><div>4</div><div>4</div><div>4</div><div>4</div><div>4</div><div>4</div>
+        <div>4</div><div>4</div> <div>4</div><div>4</div><div>4</div><div>4</div><div>4</div><div>4</div><div>4</div><div>4</div><div>4</div>
+         -->
+    </div>
+</body>
+</html>
