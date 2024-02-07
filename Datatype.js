@@ -67,18 +67,36 @@ let name = "I live in pune, pune is big city"
 console.log(name);
 
 let cities = []; //empty array
-cities = ['pune', 'mumbai', 'banglore','nagpure','nashik']
+cities = ['pune', 'mumbai', 'banglore','nagpure','nashik']  //homogeneous
 console.log(cities);
 console.log(typeof(cities));  //array data type is always object
 console.log(cities[2]);  //banglore
 console.log(cities[10]); //undefined
-console.log(cities.length);
-console.log(cities[cities.length - 1]);
+console.log(cities.length); //5
+console.log(cities[cities.length - 1]); //nashik
+
+let hetroArray = ['kavita', 24586, test(), null, undefined, true, 'kanak'];  //hetrogeneous array
+console.log(hetroArray[2]);
+
+function test(){
+  //  return 'kavita'
+}
+
+//let cars = {}  //object >> {key:value}
+
+let cars ={
+  carName : "swift",
+  carPrice : 120000,
+  carColor : "grey"
+}
+
+console.log(cars.carName);
+console.log(cars.carPrice);
+console.log(typeof(cars)); //object
 
 
-
-
-
+//Q int. :what are the data types present in java script
+//is integer is data types, is null is data types, is string is data types, is number is data types 
 
 
 
