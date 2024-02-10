@@ -25,8 +25,10 @@ console.log(d + city + b);  //40mumbai20
 console.log(d + city + b + a);  //40mumbai2010
 console.log(a + d + city + b + a);  //50mumbai2010
 
-
-
+console.log("a",a);
+console.log("a" + a);
+console.log(a,b,c,d,city);
+console.log('a',a,'b',b,'c',c,'d',d,'city',city);
 
 
 
