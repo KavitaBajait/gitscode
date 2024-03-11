@@ -107,6 +107,43 @@ console.log(foundIndex);  //output = 2
 const array1 = [10,20,30,20,20,50,88,20];
 console.log(array1.includes(40));  //false
 
+let char = [ 'a','b','a','a','d','f','b'];
+
+//remove items using set()
+let char2 = [...new Set(char)];
+console.log(char2);  //['a', 'b', 'd', 'f']
+
+//filter()
+let data = char.filter((item,i) =>{
+    return char.indexOf(item) === i;
+})
+console.log(data);  //['a', 'b', 'd', 'f']
+
+//using includes()
+let uniqueEle = [];
+char.forEach((ele,i)=>{
+     if(!uniqueEle.includes(ele))
+     {
+          uniqueEle.push(ele)
+     }
+})
+console.log(uniqueEle);  //['a', 'b', 'd', 'f']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
